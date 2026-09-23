@@ -6,19 +6,19 @@ const linkClass =
 
 export default function Home() {
   return (
-    <main className="mx-auto min-h-screen w-full max-w-[680px] px-5 py-5 sm:px-7 sm:py-7">
-      <header className="flex items-start justify-between gap-6 text-[14px] leading-5">
+    <main className="mx-auto min-h-screen w-full max-w-[680px] px-4 py-4 min-[420px]:px-5 sm:px-7 sm:py-7">
+      <header className="flex items-start justify-between gap-x-6 gap-y-3 text-[14px] leading-5 max-[380px]:flex-col">
         <a href="#top" className="font-medium tracking-[-0.015em]">
           Uday Agarwal
         </a>
-        <nav aria-label="Main navigation" className="flex gap-4 text-muted-foreground">
+        <nav aria-label="Main navigation" className="flex flex-wrap gap-x-4 gap-y-2 text-muted-foreground">
           <a href="#work" className="transition-colors hover:text-foreground">Work</a>
           <a href="#experience" className="transition-colors hover:text-foreground">Experience</a>
           <a href="#contact" className="transition-colors hover:text-foreground">Contact</a>
         </nav>
       </header>
 
-      <div id="top" className="pt-[24vh] sm:pt-[28vh]">
+      <div id="top" className="pt-[clamp(6rem,20svh,10rem)] sm:pt-[28vh]">
         <section aria-labelledby="intro-heading" className="max-w-[590px]">
           <h1 id="intro-heading" className="sr-only">About Uday Agarwal</h1>
           <p>
@@ -35,7 +35,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section id="work" aria-labelledby="work-heading" className="scroll-mt-8 pt-28 sm:pt-36">
+        <section id="work" aria-labelledby="work-heading" className="scroll-mt-8 pt-24 sm:pt-36">
           <SectionTitle id="work-heading">Selected work</SectionTitle>
           <ol>
             {portfolio.projects.map((project, index) => (
@@ -58,7 +58,7 @@ export default function Home() {
           </ol>
         </section>
 
-        <section id="experience" aria-labelledby="experience-heading" className="scroll-mt-8 pt-28 sm:pt-36">
+        <section id="experience" aria-labelledby="experience-heading" className="scroll-mt-8 pt-24 sm:pt-36">
           <SectionTitle id="experience-heading">Experience</SectionTitle>
           <div>
             {portfolio.experience.map((item) => (
@@ -80,11 +80,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" aria-labelledby="contact-heading" className="scroll-mt-8 pt-28 sm:pt-36">
+        <section id="contact" aria-labelledby="contact-heading" className="scroll-mt-8 pt-24 sm:pt-36">
           <SectionTitle id="contact-heading">Elsewhere</SectionTitle>
           <p className="max-w-[570px]">
             You can reach me at{" "}
-            <a href={`mailto:${portfolio.email}`} className={linkClass}>{portfolio.email}</a>
+            <a href={`mailto:${portfolio.email}`} className={`${linkClass} break-words`}>{portfolio.email}</a>
             , or find me on{" "}
             {portfolio.socials.map((social, index) => (
               <span key={social.label}>
@@ -100,9 +100,9 @@ export default function Home() {
 
       <footer className="pt-32 pb-3 text-[12px] text-muted-foreground sm:pt-44">
         <Separator className="mb-3" />
-        <div className="flex justify-between gap-5">
+        <div className="flex flex-col gap-1 min-[360px]:flex-row min-[360px]:justify-between min-[360px]:gap-5">
           <p>Uday Agarwal</p>
-          <p>Delhi, India · 2026</p>
+          <p>Jaipur, India · 2026</p>
         </div>
       </footer>
     </main>
