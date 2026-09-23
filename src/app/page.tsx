@@ -39,19 +39,23 @@ export default function Home() {
           <SectionTitle id="work-heading">Selected work</SectionTitle>
           <ol>
             {portfolio.projects.map((project, index) => (
-              <li key={project} className="group flex items-baseline justify-between gap-8 border-b border-border py-3 first:border-t">
-                <span className="font-medium tracking-[-0.01em] transition-transform duration-150 group-hover:translate-x-1">
-                  {project}
-                </span>
-                <span className="shrink-0 text-[12px] tabular-nums text-muted-foreground">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
+              <li key={project.name} className="border-b border-border first:border-t">
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex items-baseline justify-between gap-8 py-3 focus-visible:rounded-[2px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                  <span className="font-medium tracking-[-0.01em] transition-transform duration-150 group-hover:translate-x-1">
+                    {project.name}
+                  </span>
+                  <span className="shrink-0 text-[12px] tabular-nums text-muted-foreground">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </a>
               </li>
             ))}
           </ol>
-          <p className="mt-3 text-[12px] leading-5 text-muted-foreground">
-            Case studies and project links will be added as they are ready.
-          </p>
         </section>
 
         <section id="experience" aria-labelledby="experience-heading" className="scroll-mt-8 pt-28 sm:pt-36">

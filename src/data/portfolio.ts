@@ -4,9 +4,15 @@ export const portfolio = {
     { label: "GitHub", href: "https://github.com/Uday-2611" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/udayagarwal2611/" },
     { label: "Twitter", href: "https://x.com/AgarwalUday26" },
-    { label: "Instagram", href: "https://www.instagram.com/udayy2611/" },
+    { label: "Instagram", href: "https://www.instagram.com/uday.agarwal26/" },
   ],
-  projects: ["Almanca", "Framix", "Biblio", "Strada", "Crossed"],
+  projects: [
+    { name: "Almanac", href: "https://almanac-archive.vercel.app/" },
+    { name: "Framix", href: "https://github.com/Uday-2611/Framix.git" },
+    { name: "Biblio", href: "https://github.com/Uday-2611/Biblio.git" },
+    { name: "Strada", href: "https://github.com/Uday-2611/strada.git" },
+    { name: "Crossed", href: "https://crossed-web.vercel.app/" },
+  ],
   experience: [
     {
       company: "Capgemini",

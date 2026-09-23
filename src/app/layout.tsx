@@ -4,11 +4,11 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Uday Agarwal — Developer, Designer & Analyst",
+  title: "Uday Agarwal",
   description:
     "Uday Agarwal builds purposeful digital products across design, technology, and analytics.",
   openGraph: {
-    title: "Uday Agarwal — Developer, Designer & Analyst",
+    title: "Uday Agarwal",
     description:
       "Selected work, experience, and ways to get in touch.",
     type: "website",
