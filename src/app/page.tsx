@@ -7,7 +7,7 @@ const linkClass =
 export default function Home() {
   return (
     <main className="mx-auto min-h-screen w-full max-w-[680px] px-4 py-4 min-[420px]:px-5 sm:px-7 sm:py-7">
-      <header className="text-[14px] leading-5">
+      <header className="pt-1 text-[15px] leading-5">
         <a href="#top" className="font-medium tracking-[-0.015em]">
           Uday Agarwal
         </a>
