@@ -1,62 +1,33 @@
 export const portfolio = {
   email: "udayagarwal234@gmail.com",
-  github: "https://github.com/Uday-2611",
-  linkedin: "https://www.linkedin.com/in/uday-agarwal/",
-  projects: [
-    {
-      title: "Personal Portfolio",
-      description:
-        "A deliberately minimal home for my work, background, and current direction.",
-      year: "2026",
-      href: "https://github.com/Uday-2611/personal-portfolio",
-      external: true,
-    },
-    {
-      title: "Project archive",
-      description:
-        "Experiments, applications, and works in progress collected on GitHub.",
-      year: "Ongoing",
-      href: "https://github.com/Uday-2611?tab=repositories",
-      external: true,
-    },
-    {
-      title: "Next case study",
-      description:
-        "A focused walkthrough of the problem, the process, and what shipped.",
-      year: "Soon",
-      href: "mailto:udayagarwal234@gmail.com?subject=Tell%20me%20about%20your%20work",
-      external: false,
-    },
+  socials: [
+    { label: "GitHub", href: "https://github.com/Uday-2611" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/udayagarwal2611/" },
+    { label: "Twitter", href: "https://x.com/AgarwalUday26" },
+    { label: "Instagram", href: "https://www.instagram.com/udayy2611/" },
   ],
+  projects: ["Almanca", "Framix", "Biblio", "Strada", "Crossed"],
   experience: [
     {
-      role: "Independent developer",
-      company: "Personal & collaborative projects",
-      period: "Present",
+      company: "Capgemini",
+      role: "Senior Analyst",
+      period: "Joining soon",
       description:
-        "Designing and building web products end to end, with an emphasis on clear interfaces, maintainable systems, and learning through shipping.",
+        "Beginning the next chapter of my work across technology, design, and analytics.",
     },
     {
-      role: "Open-source contributor",
-      company: "GitHub",
-      period: "Ongoing",
+      company: "mPass — Visitor Management Simplified",
+      role: "Full Stack Intern",
+      period: "Feb 2026 — Jun 2026",
       description:
-        "Exploring codebases, documenting decisions, and contributing improvements where they can be useful.",
+        "Designed and developed reusable interfaces, interactive analytics dashboards, and performant API-driven features with Next.js and TypeScript.",
     },
-  ],
-  education: {
-    degree: "Education details",
-    institution: "Add degree and institution in the next content pass",
-    period: "—",
-    description:
-      "This section is ready for your exact program, institution, dates, and one useful line of context.",
-  },
-  skills: [
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Product UI",
-    "Git",
+    {
+      company: "Celebal Technologies",
+      role: "Summer Intern",
+      period: "May 2025 — Jul 2025",
+      description:
+        "Built responsive React interfaces through modular component design, API integration, and considered performance work.",
+    },
   ],
 } as const;
