@@ -7,10 +7,15 @@ const linkClass =
 export default function Home() {
   return (
     <main className="mx-auto min-h-screen w-full max-w-[680px] px-4 py-4 min-[420px]:px-5 sm:px-7 sm:py-7">
-      <header className="pt-1 text-[15px] leading-5">
-        <a href="#top" className="font-medium tracking-[-0.015em]">
+      <header className="flex items-start justify-between gap-x-6 gap-y-3 pt-1 leading-5 max-[380px]:flex-col">
+        <a href="#top" className="text-[15px] font-medium tracking-[-0.015em]">
           Uday Agarwal
         </a>
+        <nav aria-label="Main navigation" className="flex flex-wrap gap-x-4 gap-y-2 text-[14px] text-muted-foreground">
+          <a href="#work" className="transition-colors hover:text-foreground">Work</a>
+          <a href="#experience" className="transition-colors hover:text-foreground">Experience</a>
+          <a href="#contact" className="transition-colors hover:text-foreground">Contact</a>
+        </nav>
       </header>
 
       <div id="top" className="pt-[clamp(6rem,20svh,10rem)] sm:pt-[28vh]">
