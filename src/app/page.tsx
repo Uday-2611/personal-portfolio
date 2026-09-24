@@ -33,6 +33,19 @@ export default function Home() {
             I&apos;ll soon join <span className="font-medium">Capgemini</span> as a Senior
             Analyst. Until then, I&apos;m continuing to make, learn, and refine the work.
           </p>
+          <p className="mt-4">
+            For a closer look at the ideas, references, and curiosities shaping my work,
+            visit my{" "}
+            <a
+              href="https://archival-museum.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className={linkClass}
+            >
+              archival museum
+            </a>
+            .
+          </p>
         </section>
 
         <section id="work" aria-labelledby="work-heading" className="scroll-mt-8 pt-24 sm:pt-36">
