@@ -23,6 +23,7 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-signature: var(--signature);
   --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono", ui-monospace, monospace;
   --radius-sm: 0.125rem;
@@ -50,6 +51,7 @@
   --border: #dedede;
   --input: #dedede;
   --ring: #151515;
+  --signature: #f0eb83;
 }
 
 @layer base {

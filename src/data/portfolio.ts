@@ -1,7 +1,6 @@
 export const portfolio = {
   email: "udayagarwal234@gmail.com",
   socials: [
-    { label: "GitHub", href: "https://github.com/Uday-2611" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/udayagarwal2611/" },
     { label: "Twitter", href: "https://x.com/AgarwalUday26" },
     { label: "Instagram", href: "https://www.instagram.com/uday.agarwal26/" },
