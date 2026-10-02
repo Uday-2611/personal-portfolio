@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { portfolio } from "@/data/portfolio";
 
@@ -7,7 +6,7 @@ const linkClass =
 
 export default function Home() {
   return (
-    <main className="relative mx-auto min-h-screen w-full max-w-[680px] overflow-hidden px-4 pt-4 min-[420px]:px-5 sm:px-7 sm:pt-7">
+    <main className="mx-auto min-h-screen w-full max-w-[680px] px-4 py-4 min-[420px]:px-5 sm:px-7 sm:py-7">
       <header className="flex items-start justify-between gap-x-6 gap-y-3 pt-1 leading-5 max-[380px]:flex-col">
         <a href="#top" className="inline-flex items-center gap-1.5 text-[15px] font-medium tracking-[-0.015em]">
           Uday Agarwal
@@ -113,23 +112,13 @@ export default function Home() {
         </section>
       </div>
 
-      <footer className="relative z-10 pt-32 pb-44 text-[12px] text-muted-foreground sm:pt-44 sm:pb-[16.5rem]">
+      <footer className="pt-32 pb-3 text-[12px] text-muted-foreground sm:pt-44">
         <Separator className="mb-3" />
         <div className="flex flex-col gap-1 min-[360px]:flex-row min-[360px]:justify-between min-[360px]:gap-5">
           <p>Uday Agarwal</p>
           <p>Jaipur, India · 2026</p>
         </div>
       </footer>
-
-      <Image
-        src="/hawa-mahal.png"
-        alt=""
-        aria-hidden="true"
-        width={1121}
-        height={1402}
-        sizes="(max-width: 639px) 128px, 190px"
-        className="pointer-events-none absolute right-[-0.4rem] bottom-0 h-auto w-32 select-none sm:right-0 sm:w-[190px]"
-      />
     </main>
   );
 }

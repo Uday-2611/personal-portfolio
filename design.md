@@ -30,7 +30,6 @@ Body text is **15px**, weight 400, line height **1.45**, letter spacing **-0.01e
 - Leave **96px** before each main section on smaller screens and **144px** from 640px wide. Leave **128px** before the footer, increasing to **176px** from 640px.
 - Use **1px dividers** above lists and between rows. Project rows have **12px** vertical padding; experience rows have **16px**. Keep description text **12px** below its heading block.
 - Header navigation uses **16px** horizontal and **8px** vertical gaps, wraps when needed, and stacks below the name at **380px and narrower**. Footer text stacks below **360px**.
-- The optional Hawa Mahal cutout sits at the bottom-right: **128px** wide on mobile and **190px** from 640px. Reserve **176px / 264px** below the footer copy so it never overlaps text.
 
 ## Reuse rules
 
