@@ -6,9 +6,9 @@ Use this as a starting point for other Uday Agarwal projects. Preserve the restr
 
 - Keep the interface light, quiet, and content first. Use whitespace for hierarchy before adding boxes, shadows, or decoration.
 - Use one narrow reading column, short copy, clear section labels, and thin dividers.
-- Give each project one palette color for its top-down hover reveal. Keep the name in the header plain. Use white text on dark blue and red; use dark text on yellow, green, and mist.
+- Use `#080669` as the sole accent. Reveal it from the top of each project row on hover or keyboard focus, with white text. Keep the name in the header plain.
 - Let links look like links: underlined text, a clearer underline on hover, and a visible keyboard focus ring. Avoid large buttons unless the action calls for one.
-- Use motion sparingly: a top-down color fill on project hover and a 150ms, 4px shift on project names. Respect reduced-motion preferences.
+- Use motion sparingly: only the top-down color fill on project hover. Keep project text fixed in place and respect reduced-motion preferences.
 
 ## Tokens
 
@@ -18,14 +18,10 @@ Use this as a starting point for other Uday Agarwal projects. Preserve the restr
 | Main text / focus ring | `#151515` |
 | Muted text | `#6B6B6B` |
 | Dividers | `#DEDEDE` |
-| Signature accent | `#F0EB83` |
-| Palette blue | `#080669` |
-| Palette red | `#C21D23` |
-| Palette green | `#539A18` |
-| Palette mist | `#BBD1D3` |
+| Accent / project hover | `#080669` |
 | Font | Geist Sans, with a system sans fallback |
 
-Project hover colors, in order: **Almanac** yellow, **Framix** blue, **Biblio** red, **Strada** green, **Crossed** mist.
+All project rows use the same navy hover treatment; their text stays in its original position.
 
 Body text is **15px**, weight 400, line height **1.45**, letter spacing **-0.01em**. Use weight 500 for names and key labels; avoid heavy display weights. Navigation is **14px**. Section labels and footer are **12px**; labels are uppercase with **0.08em** letter spacing. Supporting descriptions are **13px** with **1.55** line height.
 

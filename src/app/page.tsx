@@ -4,14 +4,6 @@ import { portfolio } from "@/data/portfolio";
 const linkClass =
   "underline decoration-foreground/35 underline-offset-[3px] transition-colors hover:decoration-foreground focus-visible:rounded-[2px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2";
 
-const projectHoverStyles = {
-  Almanac: { fill: "bg-signature", lightText: false },
-  Framix: { fill: "bg-palette-blue", lightText: true },
-  Biblio: { fill: "bg-palette-red", lightText: true },
-  Strada: { fill: "bg-palette-green", lightText: false },
-  Crossed: { fill: "bg-palette-mist", lightText: false },
-} as const;
-
 export default function Home() {
   return (
     <main className="mx-auto min-h-screen w-full max-w-[680px] px-4 py-4 min-[420px]:px-5 sm:px-7 sm:py-7">
@@ -59,28 +51,24 @@ export default function Home() {
         <section id="work" aria-labelledby="work-heading" className="scroll-mt-8 pt-24 sm:pt-36">
           <SectionTitle id="work-heading">Selected work</SectionTitle>
           <ol>
-            {portfolio.projects.map((project, index) => {
-              const hoverStyle = projectHoverStyles[project.name];
-
-              return (
-                <li key={project.name} className="border-b border-border first:border-t">
-                  <a
-                    href={project.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group relative flex items-baseline justify-between gap-8 overflow-hidden py-3 focus-visible:rounded-[2px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                  >
-                    <span aria-hidden="true" className={`pointer-events-none absolute inset-0 origin-top scale-y-0 transition-transform duration-300 ease-out group-hover:scale-y-100 group-focus-visible:scale-y-100 ${hoverStyle.fill}`} />
-                    <span className={`relative font-medium tracking-[-0.01em] transition-[transform,color] duration-150 group-hover:translate-x-1 ${hoverStyle.lightText ? "group-hover:delay-100 group-hover:text-white group-focus-visible:delay-100 group-focus-visible:text-white" : ""}`}>
-                      {project.name}
-                    </span>
-                    <span className={`relative shrink-0 text-[12px] tabular-nums text-muted-foreground transition-colors duration-150 ${hoverStyle.lightText ? "group-hover:delay-100 group-hover:text-white group-focus-visible:delay-100 group-focus-visible:text-white" : "group-hover:text-foreground group-focus-visible:text-foreground"}`}>
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                  </a>
-                </li>
-              );
-            })}
+            {portfolio.projects.map((project, index) => (
+              <li key={project.name} className="border-b border-border first:border-t">
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group relative flex items-baseline justify-between gap-8 overflow-hidden py-3 focus-visible:rounded-[2px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                  <span aria-hidden="true" className="pointer-events-none absolute inset-0 origin-top scale-y-0 bg-primary transition-transform duration-300 ease-out group-hover:scale-y-100 group-focus-visible:scale-y-100" />
+                  <span className="relative font-medium tracking-[-0.01em] transition-colors duration-150 group-hover:delay-100 group-hover:text-primary-foreground group-focus-visible:delay-100 group-focus-visible:text-primary-foreground">
+                    {project.name}
+                  </span>
+                  <span className="relative shrink-0 text-[12px] tabular-nums text-muted-foreground transition-colors duration-150 group-hover:delay-100 group-hover:text-primary-foreground group-focus-visible:delay-100 group-focus-visible:text-primary-foreground">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </a>
+              </li>
+            ))}
           </ol>
         </section>
 
