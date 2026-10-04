@@ -6,9 +6,9 @@ Use this as a starting point for other Uday Agarwal projects. Preserve the restr
 
 - Keep the interface light, quiet, and content first. Use whitespace for hierarchy before adding boxes, shadows, or decoration.
 - Use one narrow reading column, short copy, clear section labels, and thin dividers.
-- Reserve signature yellow for the project-row hover reveal. Use the four other palette colors together as a tiny mark beside the name. Keep text dark for contrast.
+- Give each project one palette color for its top-down hover reveal. Keep the name in the header plain. Use white text on dark blue and red; use dark text on yellow, green, and mist.
 - Let links look like links: underlined text, a clearer underline on hover, and a visible keyboard focus ring. Avoid large buttons unless the action calls for one.
-- Use motion sparingly: a top-down yellow fill on project hover and a 150ms, 4px shift on project names. Respect reduced-motion preferences.
+- Use motion sparingly: a top-down color fill on project hover and a 150ms, 4px shift on project names. Respect reduced-motion preferences.
 
 ## Tokens
 
@@ -24,6 +24,8 @@ Use this as a starting point for other Uday Agarwal projects. Preserve the restr
 | Palette green | `#539A18` |
 | Palette mist | `#BBD1D3` |
 | Font | Geist Sans, with a system sans fallback |
+
+Project hover colors, in order: **Almanac** yellow, **Framix** blue, **Biblio** red, **Strada** green, **Crossed** mist.
 
 Body text is **15px**, weight 400, line height **1.45**, letter spacing **-0.01em**. Use weight 500 for names and key labels; avoid heavy display weights. Navigation is **14px**. Section labels and footer are **12px**; labels are uppercase with **0.08em** letter spacing. Supporting descriptions are **13px** with **1.55** line height.
 
