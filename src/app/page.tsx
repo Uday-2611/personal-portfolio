@@ -10,7 +10,12 @@ export default function Home() {
       <header className="flex items-start justify-between gap-x-6 gap-y-3 pt-1 leading-5 max-[380px]:flex-col">
         <a href="#top" className="inline-flex items-center gap-1.5 text-[15px] font-medium tracking-[-0.015em]">
           Uday Agarwal
-          <span aria-hidden="true" className="size-1.5 shrink-0 rounded-full bg-signature" />
+          <span aria-hidden="true" className="inline-flex shrink-0 items-center gap-0.5">
+            <span className="h-2 w-[3px] rounded-[1px] bg-palette-blue" />
+            <span className="h-2 w-[3px] rounded-[1px] bg-palette-red" />
+            <span className="h-2 w-[3px] rounded-[1px] bg-palette-green" />
+            <span className="h-2 w-[3px] rounded-[1px] bg-palette-mist" />
+          </span>
         </a>
         <nav aria-label="Main navigation" className="flex flex-wrap gap-x-4 gap-y-2 text-[14px] text-muted-foreground">
           <a href="#work" className="transition-colors hover:text-foreground">Work</a>
@@ -41,7 +46,7 @@ export default function Home() {
               href="https://archival-museum.vercel.app/"
               target="_blank"
               rel="noreferrer"
-              className={`${linkClass} decoration-signature decoration-2`}
+              className={linkClass}
             >
               archival museum
             </a>
@@ -58,12 +63,13 @@ export default function Home() {
                   href={project.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="group flex items-baseline justify-between gap-8 py-3 focus-visible:rounded-[2px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  className="group relative flex items-baseline justify-between gap-8 overflow-hidden py-3 focus-visible:rounded-[2px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                 >
-                  <span className="font-medium tracking-[-0.01em] transition-transform duration-150 group-hover:translate-x-1">
+                  <span aria-hidden="true" className="pointer-events-none absolute inset-0 origin-top scale-y-0 bg-signature transition-transform duration-300 ease-out group-hover:scale-y-100 group-focus-visible:scale-y-100" />
+                  <span className="relative font-medium tracking-[-0.01em] transition-transform duration-150 group-hover:translate-x-1">
                     {project.name}
                   </span>
-                  <span className="shrink-0 text-[12px] tabular-nums text-muted-foreground">
+                  <span className="relative shrink-0 text-[12px] tabular-nums text-muted-foreground">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                 </a>

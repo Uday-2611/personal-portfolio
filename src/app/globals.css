@@ -24,6 +24,10 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-signature: var(--signature);
+  --color-palette-blue: var(--palette-blue);
+  --color-palette-red: var(--palette-red);
+  --color-palette-green: var(--palette-green);
+  --color-palette-mist: var(--palette-mist);
   --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono", ui-monospace, monospace;
   --radius-sm: 0.125rem;
@@ -52,6 +56,10 @@
   --input: #dedede;
   --ring: #151515;
   --signature: #f0eb83;
+  --palette-blue: #080669;
+  --palette-red: #c21d23;
+  --palette-green: #539a18;
+  --palette-mist: #bbd1d3;
 }
 
 @layer base {

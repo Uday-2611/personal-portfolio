@@ -6,9 +6,9 @@ Use this as a starting point for other Uday Agarwal projects. Preserve the restr
 
 - Keep the interface light, quiet, and content first. Use whitespace for hierarchy before adding boxes, shadows, or decoration.
 - Use one narrow reading column, short copy, clear section labels, and thin dividers.
-- Keep the signature yellow rare and purposeful. It currently appears as a 6px dot beside the name and a 2px underline on one personal link. Keep text dark for contrast.
+- Reserve signature yellow for the project-row hover reveal. Use the four other palette colors together as a tiny mark beside the name. Keep text dark for contrast.
 - Let links look like links: underlined text, a clearer underline on hover, and a visible keyboard focus ring. Avoid large buttons unless the action calls for one.
-- Use motion sparingly: only a 150ms, 4px shift on project names at hover. Respect reduced-motion preferences.
+- Use motion sparingly: a top-down yellow fill on project hover and a 150ms, 4px shift on project names. Respect reduced-motion preferences.
 
 ## Tokens
 
@@ -19,6 +19,10 @@ Use this as a starting point for other Uday Agarwal projects. Preserve the restr
 | Muted text | `#6B6B6B` |
 | Dividers | `#DEDEDE` |
 | Signature accent | `#F0EB83` |
+| Palette blue | `#080669` |
+| Palette red | `#C21D23` |
+| Palette green | `#539A18` |
+| Palette mist | `#BBD1D3` |
 | Font | Geist Sans, with a system sans fallback |
 
 Body text is **15px**, weight 400, line height **1.45**, letter spacing **-0.01em**. Use weight 500 for names and key labels; avoid heavy display weights. Navigation is **14px**. Section labels and footer are **12px**; labels are uppercase with **0.08em** letter spacing. Supporting descriptions are **13px** with **1.55** line height.
